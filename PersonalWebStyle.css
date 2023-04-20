@@ -1,5 +1,4 @@
-﻿/* Reset Styles */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -165,3 +164,5 @@ section {
 /* Footer Styles */
 footer {
     background-color: #333;
+    margin-top: auto;
+}
