@@ -1,4 +1,4 @@
-﻿ /* Reset Styles */
+﻿/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.6;
     background-color: #f6f6f6;
@@ -71,22 +71,97 @@ section {
 /* Project Styles */
 .project {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+    .project img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 40px;
+    }
 
     .project h2 {
         font-size: 24px;
         margin-bottom: 10px;
+        font-weight: bold;
     }
 
     .project p {
         font-size: 18px;
         margin-bottom: 20px;
+        line-height: 1.5;
+        color: #555;
     }
+
+/* Skill Set Styles */
+.skill-set {
+    margin-bottom: 40px;
+}
+
+    .skill-set h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .skill-set ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .skill-set li {
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex: 1 0 30%;
+        max-width: 30%;
+        display: flex;
+        align-items: center;
+    }
+
+        .skill-set li img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .skill-set li p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+/* Employment History Styles */
+.employment-history {
+    margin-bottom: 40px;
+}
+
+    .employment-history h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .employment-history .job {
+        margin-bottom: 40px;
+    }
+
+        .employment-history .job h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .employment-history .job p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #555;
+        }
 
 /* Footer Styles */
 footer {
     background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
