@@ -1,10 +1,10 @@
-﻿* {
+﻿/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
@@ -13,15 +13,68 @@ body {
     color: #333;
 }
 
-main {
-    flex-grow: 1;
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    a:hover {
+        color: #0d47a1;
+    }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
 }
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #0d47a1;
+    }
 
 /* Navigation Styles */
 nav {
@@ -47,11 +100,10 @@ nav {
                 text-decoration: none;
                 font-weight: bold;
                 text-transform: uppercase;
-                transition: color 0.3s ease;
             }
 
                 nav ul li a:hover {
-                    color: #f00;
+                    color: #1a73e8;
                 }
 
 /* Section Styles */
@@ -60,18 +112,15 @@ section {
 }
 
     section h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
         text-align: center;
-        color: #333;
-        text-shadow: 1px 1px #fff;
+    }
+
+    section h2 {
+        text-align: center;
     }
 
     section p {
-        font-size: 18px;
-        margin-bottom: 20px;
         text-align: center;
-        color: #777;
     }
 
 /* Project Styles */
@@ -86,14 +135,12 @@ section {
         max-width: 100%;
         height: auto;
         margin-right: 40px;
-        box-shadow: 2px 2px 5px #888;
     }
 
     .project h2 {
         font-size: 24px;
         margin-bottom: 10px;
         font-weight: bold;
-        color: #333;
     }
 
     .project p {
@@ -109,11 +156,7 @@ section {
 }
 
     .skill-set h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
         text-align: center;
-        color: #333;
-        text-shadow: 1px 1px #fff;
     }
 
     .skill-set ul {
@@ -131,12 +174,9 @@ section {
         max-width: 30%;
         display: flex;
         align-items: center;
-        background-color: #f0f0f0;
-        border: 1px solid #ddd;
-        box-shadow: 2px 2px 5px #888;
-        padding: 20px;
     }
 
         .skill-set li img {
             max-width: 50px;
-            height: auto
+            height: auto;
+            margin-right:
