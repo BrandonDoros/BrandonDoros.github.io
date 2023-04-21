@@ -1,84 +1,31 @@
-﻿/* Global Styles */
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Styles */
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    background-color: #f6f6f6;
+    background-color: #fce8d4;
     color: #333;
 }
 
-a {
-    color: #1a73e8;
-    text-decoration: none;
-    transition: color 0.3s ease;
+main {
+    flex-grow: 1;
 }
 
-    a:hover {
-        color: #0d47a1;
-    }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-
-h1 {
-    font-size: 42px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-h3 {
-    font-size: 28px;
-}
-
-h4 {
-    font-size: 24px;
-}
-
-h5 {
-    font-size: 20px;
-}
-
-h6 {
-    font-size: 16px;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-button {
-    background-color: #1a73e8;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-    button:hover {
-        background-color: #0d47a1;
-    }
 
 /* Navigation Styles */
 nav {
-    background-color: #fff;
+    background-color: #ffdd99;
     border-bottom: 1px solid #ddd;
     padding: 20px;
     display: flex;
@@ -100,10 +47,11 @@ nav {
                 text-decoration: none;
                 font-weight: bold;
                 text-transform: uppercase;
+                transition: color 0.3s ease;
             }
 
                 nav ul li a:hover {
-                    color: #1a73e8;
+                    color: #f00;
                 }
 
 /* Section Styles */
@@ -112,14 +60,14 @@ section {
 }
 
     section h1 {
-        text-align: center;
-    }
-
-    section h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
     section p {
+        font-size: 18px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -156,6 +104,8 @@ section {
 }
 
     .skill-set h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
         text-align: center;
     }
 
@@ -179,4 +129,31 @@ section {
         .skill-set li img {
             max-width: 50px;
             height: auto;
-            margin-right:
+            margin-right: 10px;
+        }
+
+        .skill-set li p {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+
+/* Employment History Styles */
+.employment-history {
+    margin-bottom: 40px;
+}
+
+    .employment-history h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .employment-history .job {
+        margin-bottom: 40px;
+    }
+
+        .employment-history .job h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
